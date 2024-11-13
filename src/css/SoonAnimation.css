@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Anton;
+    src: url('../assets/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: BeVietnam;
+    src: url('../assets/BeVietnamPro-Regular.ttf');
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+}
+.container {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    gap: 80px;
+    height: 100svh;
+    flex-flow: column;
+}
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.topText {
+    font-family: BeVietnam;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    letter-spacing: 2px;
+    align-items: center;
+}
+#textInTheTop {
+    transform: scale(0);
+    animation: 1s starting_ forwards;
+}
+.centerText h1 {
+    font-family: Anton;
+    margin: 0;
+    font-style: italic;
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 150px;
+}
+#firstText {
+    letter-spacing: 5px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+.flextext__ {
+    display: flex;
+}
+.flextext_, .flextext {
+    /* transform: scale(0); */
+    display: flex;
+    animation: 1s bouncing infinite forwards;
+    animation-delay: 1.6s;
+}
+#firstText, #secondText {
+    transform: scale(0);
+    animation: 1s starting forwards;
+}
+.centerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.animation img {
+    width: 130px;
+}
+#firstText:nth-child(1), #secondText:nth-child(1) {
+    animation-delay: .2s;
+}
+#firstText:nth-child(2), #secondText:nth-child(2) {
+    animation-delay: .4s;
+}
+#firstText:nth-child(3), #secondText:nth-child(3) {
+    animation-delay: .6s;
+}
+#firstText:nth-child(4), #secondText:nth-child(4) {
+    animation-delay: .8s;
+}
+#firstText:nth-child(5), #secondText:nth-child(5) {
+    animation-delay: 1s;
+}
+#firstText:nth-child(6), #secondText:nth-child(6)  {
+    animation-delay: 1.2s;
+}
+#textInTheTop:nth-child(1) {
+    animation-delay: .1s;
+}
+#textInTheTop:nth-child(2) {
+    animation-delay: .2s;
+}
+#textInTheTop:nth-child(3) {
+    animation-delay: .3s;
+}
+#textInTheTop:nth-child(4) {
+    animation-delay: .4s;
+}
+#textInTheTop:nth-child(5) {
+    animation-delay: .5s;
+}
+#textInTheTop:nth-child(6) {
+    animation-delay: .6s;
+}
+#textInTheTop:nth-child(7) {
+    animation-delay: .7s;
+}
+#textInTheTop:nth-child(8) {
+    animation-delay: .8s;
+}
+#textInTheTop:nth-child(9) {
+    animation-delay: .9s;
+}
+#textInTheTop:nth-child(10) {
+    animation-delay: 1s;
+}
+
+
+@keyframes starting {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes starting_ {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
