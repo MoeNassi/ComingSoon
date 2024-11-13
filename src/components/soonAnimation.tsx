@@ -7,21 +7,10 @@ export default function SoonAnimation() {
             <video id="background-video" autoPlay loop muted poster="">
                 <source src="/back.mp4" type="video/mp4"/>
             </video>
+            <div className="logo">
+                <img src="/logo.svg" alt="" />
+            </div>
             <div className="text">
-                <div className="topText">
-                    <div className="flextext__">
-                        <p id='textInTheTop'>s</p>
-                        <p id='textInTheTop'>t</p>
-                        <p id='textInTheTop'>a</p>
-                        <p id='textInTheTop'>y </p>
-                        <p id='textInTheTop'>&nbsp;</p>
-                        <p id='textInTheTop'>t</p>
-                        <p id='textInTheTop'>u</p>
-                        <p id='textInTheTop'>n</p>
-                        <p id='textInTheTop'>e</p>
-                        <p id='textInTheTop'>d</p>
-                    </div>
-                </div>
                 <div className="centerText">
                     <div className="flextext">
                         <h1 id='firstText'>c</h1>
