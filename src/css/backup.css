@@ -9,6 +9,7 @@
 body {
     margin: 0;
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;      
 }
 #background-video {
     width: 100vw;
