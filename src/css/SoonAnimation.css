@@ -47,9 +47,9 @@ body {
     font-family: Anton;
     margin: 0;
     font-style: italic;
-    font-size: 120px;
+    font-size: 100px;
     text-transform: uppercase;
-    line-height: 120px;
+    line-height: 100px;
 }
 #firstText {
     letter-spacing: 5px;
@@ -103,10 +103,10 @@ body {
 .logo {
     z-index: 1;
     position: absolute;
-    top: 5%;
+    top: 6%;
 }
 .logo img {
-    width: 340px;
+    width: 380px;
 }
 
 @keyframes starting {
@@ -132,3 +132,4 @@ body {
         transform: scale(1);
     }
 }
+

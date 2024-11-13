@@ -1,59 +1,134 @@
-@media screen and (max-width: 1285px) and (max-height: 891px) {
-    .centerText h1 {
-        line-height: 80px;
-        font-size: 83px;
-    }
-    .container {
-        gap: 55px;
-    }
-    .animation img {
-        width: 100px;
-    }
+@font-face {
+    font-family: Anton;
+    src: url('../assets/Anton-Regular.ttf');
 }
-@media screen and (max-width: 675px) {
-    .centerText {
-        scale: .7;
-    }
+@font-face {
+    font-family: BeVietnam;
+    src: url('../assets/BeVietnamPro-Regular.ttf');
 }
-@media screen and (min-width: 1286px) and (max-height: 616px) {
-    .centerText {
-        scale: .6;
-    }
-    .animation img {
-        width: 60px;
-    }
-    .container {
-        gap: 0;
-    }
-    .topText {
-        font-size: 15px;
-    }
+body {
+    margin: 0;
+    overflow: hidden;
 }
-@media screen and (max-width: 608px) and (max-height: 546px) {
-    .topText {
-        font-size: 13px;
-    }
-    /* .centerText h1 {
-        font-size: 53px;
-        line-height: 50px;
-    } */
-    .animation img {
-        width: 50px;
-    }
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
 }
-@media screen and (max-width: 447px) {
-    .container {
-        gap: 0;
-    }
-    .text p {
-        font-size: 17px;
-    }
-    .centerText h1 {
-        font-size: 79px;
-        line-height: 79px;
+.container {
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    gap: 80px;
+    height: 100svh;
+    flex-flow: column;
+}
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#textInTheTop {
+    transform: scale(0);
+    animation: 1s starting_ forwards;
+}
+.centerText h1 {
+    font-family: Anton;
+    margin: 0;
+    font-style: italic;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 120px;
+}
+#firstText {
+    letter-spacing: 5px;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+.flextext_, .flextext {
+    display: flex;
+    animation: 1s bouncing infinite forwards;
+    animation-delay: 1.6s;
+}
+#firstText, #secondText {
+    transform: scale(0);
+    animation: 1s starting forwards;
+}
+.centerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    pointer-events: none;
+}
+.animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.animation img {
+    width: 130px;
+}
+#firstText:nth-child(1), #secondText:nth-child(1) {
+    animation-delay: .2s;
+}
+#firstText:nth-child(2), #secondText:nth-child(2) {
+    animation-delay: .4s;
+}
+#firstText:nth-child(3), #secondText:nth-child(3) {
+    animation-delay: .6s;
+}
+#firstText:nth-child(4), #secondText:nth-child(4) {
+    animation-delay: .8s;
+}
+#firstText:nth-child(5), #secondText:nth-child(5) {
+    animation-delay: 1s;
+}
+#firstText:nth-child(6), #secondText:nth-child(6)  {
+    animation-delay: 1.2s;
+}
+.logo {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+}
+.logo img {
+    width: 340px;
+}
 
+@keyframes starting {
+    0% {
+        transform: scale(0);
     }
-    .animation img {
-        width: 70px;
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
