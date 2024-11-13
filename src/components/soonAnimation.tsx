@@ -4,7 +4,7 @@ import './../css/responsive.css'
 export default function SoonAnimation() {
     return (
         <div className="container">
-            <video id="background-video" autoPlay loop muted poster="">
+            <video id="background-video" autoPlay playsInline loop muted poster="">
                 <source src="/back.mp4" type="video/mp4"/>
             </video>
             <div className="logo">
