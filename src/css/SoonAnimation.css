@@ -71,6 +71,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 200px;
+    pointer-events: none;
 }
 .animation {
     display: flex;
