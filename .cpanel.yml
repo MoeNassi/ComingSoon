@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - cd ComingSoon
+    - npm run dev
